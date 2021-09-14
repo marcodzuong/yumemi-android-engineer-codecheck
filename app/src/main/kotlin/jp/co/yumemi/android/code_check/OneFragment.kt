@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.*
@@ -21,24 +22,19 @@ class OneFragment: Fragment(R.layout.fragment_one){
         super.onViewCreated(view, savedInstanceState)
 
         val binding= FragmentOneBinding.bind(view)
-        val viewModel= OneViewModel(requireContext())
-
+        val viewModel= OneViewModel(app = requireActivity().application)
         val layoutManager= LinearLayoutManager(requireContext())
         val dividerItemDecoration=
             DividerItemDecoration(requireContext(), layoutManager.orientation)
-        val adapter= CustomAdapter(object : CustomAdapter.OnItemClickListener{
-            override fun itemClick(Item: Item){
-                gotoRepositoryFragment(Item)
-            }
-        })
-
+        val adapter= CustomAdapter {
+            gotoRepositoryFragment(it)
+        }
+        observerViewModel(viewModel,adapter)
         binding.searchInputText
             .setOnEditorActionListener{ editText, action, _ ->
                 if (action== EditorInfo.IME_ACTION_SEARCH){
                     editText.text.toString().let {
-                        viewModel.searchResults(it).apply{
-                            adapter.submitList(this)
-                        }
+                        viewModel.searchResults(it)
                     }
                     return@setOnEditorActionListener true
                 }
@@ -52,7 +48,18 @@ class OneFragment: Fragment(R.layout.fragment_one){
         }
     }
 
-    fun gotoRepositoryFragment(Item: Item)
+    private fun observerViewModel(viewModel: OneViewModel, adapter: CustomAdapter) {
+        viewModel.searchResult.observe(viewLifecycleOwner, {
+             adapter.submitList(it)
+        })
+        viewModel.searchError.observe(viewLifecycleOwner,{
+            if (it == true){
+                Toast.makeText(requireContext(),"Net work error!!",Toast.LENGTH_LONG).show()
+            }
+        })
+    }
+
+    private fun gotoRepositoryFragment(Item: Item)
     {
         val action= OneFragmentDirections
             .actionRepositoriesFragmentToRepositoryFragment(item= Item)
@@ -74,14 +81,11 @@ val diffUtil= object: DiffUtil.ItemCallback<Item>(){
 }
 
 class CustomAdapter(
-    private val itemClickListener: OnItemClickListener,
+   private val itemClick: (Item)->Unit,
 ) : ListAdapter<Item, CustomAdapter.ViewHolder>(diffUtil){
 
     class ViewHolder(view: View): RecyclerView.ViewHolder(view)
 
-    interface OnItemClickListener{
-    	fun itemClick(Item: Item)
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder
     {
@@ -96,7 +100,7 @@ class CustomAdapter(
         item.name.also { (holder.itemView.findViewById<View>(R.id.repositoryNameView) as TextView).text = it }
 
     	holder.itemView.setOnClickListener{
-     		itemClickListener.itemClick(item)
+     		itemClick(item)
     	}
     }
 }
