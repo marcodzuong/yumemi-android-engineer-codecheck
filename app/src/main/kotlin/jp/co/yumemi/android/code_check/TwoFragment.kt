@@ -16,8 +16,7 @@ class TwoFragment : Fragment(R.layout.fragment_two) {
 
     private val args: TwoFragmentArgs by navArgs()
 
-    private var binding: FragmentTwoBinding? = null
-    private val _binding get() = binding!!
+    private lateinit var binding: FragmentTwoBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -25,13 +24,13 @@ class TwoFragment : Fragment(R.layout.fragment_two) {
         binding = FragmentTwoBinding.bind(view)
         val item: Item = args.item
         item.run {
-            _binding.ownerIconView.load(item.ownerIconUrl)
-            _binding.nameView.text = item.name
-            _binding.languageView.text = item.language
-            _binding.starsView.text = getString(R.string.txt_count_stars, stargazersCount.toString())
-            _binding.watchersView.text = getString(R.string.txt_count_watchers, watchersCount.toString())
-            _binding.forksView.text = getString(R.string.txt_count_forks, forksCount.toString())
-            _binding.openIssuesView.text = getString(R.string.txt_count_open_issues, openIssuesCount.toString())
+            binding.ownerIconView.load(item.ownerIconUrl)
+            binding.nameView.text = item.name
+            binding.languageView.text = item.language
+            binding.starsView.text = getString(R.string.txt_count_stars, stargazersCount.toString())
+            binding.watchersView.text = getString(R.string.txt_count_watchers, watchersCount.toString())
+            binding.forksView.text = getString(R.string.txt_count_forks, forksCount.toString())
+            binding.openIssuesView.text = getString(R.string.txt_count_open_issues, openIssuesCount.toString())
         }
 
     }
