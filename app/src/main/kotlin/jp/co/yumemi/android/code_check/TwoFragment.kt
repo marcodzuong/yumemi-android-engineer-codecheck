@@ -21,19 +21,18 @@ class TwoFragment : Fragment(R.layout.fragment_two) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         Log.d("検索した日時", lastSearchDate.toString())
-
         binding = FragmentTwoBinding.bind(view)
+        val item: Item = args.item
+        item.run {
+            _binding.ownerIconView.load(item.ownerIconUrl)
+            _binding.nameView.text = item.name
+            _binding.languageView.text = item.language
+            _binding.starsView.text = getString(R.string.txt_count_stars, stargazersCount.toString())
+            _binding.watchersView.text = getString(R.string.txt_count_watchers, watchersCount.toString())
+            _binding.forksView.text = getString(R.string.txt_count_forks, forksCount.toString())
+            _binding.openIssuesView.text = getString(R.string.txt_count_open_issues, openIssuesCount.toString())
+        }
 
-        var item = args.item
-
-        _binding.ownerIconView.load(item.ownerIconUrl);
-        _binding.nameView.text = item.name;
-        _binding.languageView.text = item.language;
-        _binding.starsView.text = "${item.stargazersCount} stars";
-        _binding.watchersView.text = "${item.watchersCount} watchers";
-        _binding.forksView.text = "${item.forksCount} forks";
-        _binding.openIssuesView.text = "${item.openIssuesCount} open issues";
     }
 }
