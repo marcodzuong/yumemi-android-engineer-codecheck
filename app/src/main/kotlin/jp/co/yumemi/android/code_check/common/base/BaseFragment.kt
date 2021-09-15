@@ -22,7 +22,7 @@ abstract class BaseFragment : Fragment() {
             it?.let { command ->
                 when (command) {
                     is NavigationCommand.To -> findNavController().navigate(
-                        command.directions)
+                        command.directions,getExtras())
                     is NavigationCommand.Back -> findNavController().navigateUp()
                 }
             }
