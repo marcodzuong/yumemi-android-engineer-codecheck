@@ -1,10 +1,13 @@
 /*
  * Copyright © 2021 YUMEMI Inc. All rights reserved.
  */
-package jp.co.yumemi.android.code_check.features.search
+package jp.co.yumemi.android.code_check.features.screen.search
 
 import androidx.lifecycle.*
+import androidx.navigation.fragment.NavHostFragment.findNavController
+import androidx.navigation.fragment.findNavController
 import jp.co.yumemi.android.code_check.TopActivity
+import jp.co.yumemi.android.code_check.common.base.BaseViewModel
 import jp.co.yumemi.android.code_check.data.model.Item
 import jp.co.yumemi.android.code_check.data.repository.utils.Resource
 import jp.co.yumemi.android.code_check.features.domain.GithubUseCase
@@ -17,7 +20,7 @@ import java.util.*
 /**
  * TwoFragment で使う
  */
-class OneViewModel(private val githubUseCase: GithubUseCase) : ViewModel() {
+class OneViewModel(private val githubUseCase: GithubUseCase) : BaseViewModel() {
 
 
     // 検索結果
@@ -50,5 +53,10 @@ class OneViewModel(private val githubUseCase: GithubUseCase) : ViewModel() {
 
         }
     }
+    fun gotoRepositoryFragment(item: Item){
+//        findNavController().navigate(
+//            OneFragmentDirections.actionRepositoriesFragmentToRepositoryFragment(item))
+    }
+
 }
 

@@ -1,4 +1,4 @@
-package jp.co.yumemi.android.code_check.features.search.adapter
+package jp.co.yumemi.android.code_check.features.screen.search.adapter
 
 import android.view.LayoutInflater
 import android.view.View

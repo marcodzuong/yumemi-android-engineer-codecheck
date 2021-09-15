@@ -1,22 +1,23 @@
 /*
  * Copyright © 2021 YUMEMI Inc. All rights reserved.
  */
-package jp.co.yumemi.android.code_check.features.detail
+package jp.co.yumemi.android.code_check.features.screen.detail
 
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.activity.OnBackPressedCallback
 import androidx.navigation.fragment.navArgs
 import coil.load
 import jp.co.yumemi.android.code_check.data.model.Item
 import jp.co.yumemi.android.code_check.R
 import jp.co.yumemi.android.code_check.TopActivity.Companion.lastSearchDate
+import jp.co.yumemi.android.code_check.common.base.BaseFragment
 import jp.co.yumemi.android.code_check.databinding.FragmentTwoBinding
 
-class TwoFragment : Fragment() {
+class TwoFragment : BaseFragment() {
 
     private val args: TwoFragmentArgs by navArgs()
     private var _binding: FragmentTwoBinding? = null
@@ -46,8 +47,13 @@ class TwoFragment : Fragment() {
             binding.openIssuesView.text =
                 getString(R.string.txt_count_open_issues, openIssuesCount.toString())
         }
+        val callback = requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, object  : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
 
+            }
+        })
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

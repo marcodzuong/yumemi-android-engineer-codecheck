@@ -1,7 +1,7 @@
 /*
  * Copyright © 2021 YUMEMI Inc. All rights reserved.
  */
-package jp.co.yumemi.android.code_check.features.search
+package jp.co.yumemi.android.code_check.features.screen.search
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,15 +9,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.widget.Toast
-import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.*
-import jp.co.yumemi.android.code_check.data.model.Item
-import jp.co.yumemi.android.code_check.features.search.adapter.CustomAdapter
+import jp.co.yumemi.android.code_check.common.base.BaseFragment
+import jp.co.yumemi.android.code_check.common.base.BaseViewModel
+import jp.co.yumemi.android.code_check.features.screen.search.adapter.CustomAdapter
 import jp.co.yumemi.android.code_check.databinding.FragmentOneBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class OneFragment : Fragment() {
+class OneFragment : BaseFragment() {
 
     private var _binding: FragmentOneBinding? = null
     private val binding get() = _binding!!
@@ -39,9 +40,11 @@ class OneFragment : Fragment() {
         val dividerItemDecoration =
             DividerItemDecoration(requireContext(), layoutManager.orientation)
         val adapter = CustomAdapter {
-            gotoRepositoryFragment(it)
+            viewModel.gotoRepositoryFragment(it)
+            findNavController().navigate(
+                OneFragmentDirections.actionRepositoriesFragmentToRepositoryFragment(it))
         }
-        observerViewModel( adapter)
+        observerViewModel(adapter)
         binding.searchInputText
             .setOnEditorActionListener { editText, action, _ ->
                 if (action == EditorInfo.IME_ACTION_SEARCH) {
@@ -60,7 +63,10 @@ class OneFragment : Fragment() {
         }
     }
 
-    private fun observerViewModel( adapter: CustomAdapter) {
+
+    override fun getViewModel(): BaseViewModel = viewModel
+
+    private fun observerViewModel(adapter: CustomAdapter) {
         viewModel.search.observe(viewLifecycleOwner, {
             adapter.submitList(it)
         })
@@ -69,16 +75,11 @@ class OneFragment : Fragment() {
                 Toast.makeText(requireContext(), "Net work error!!", Toast.LENGTH_LONG).show()
             }
         })
-        viewModel.isLoading.observe(viewLifecycleOwner,{
+        viewModel.isLoading.observe(viewLifecycleOwner, {
 
         })
     }
 
-    private fun gotoRepositoryFragment(Item: Item) {
-        val action = OneFragmentDirections
-            .actionRepositoriesFragmentToRepositoryFragment(item = Item)
-        findNavController().navigate(action)
-    }
 
     override fun onDestroyView() {
         super.onDestroyView()
