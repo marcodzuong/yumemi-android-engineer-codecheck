@@ -36,9 +36,9 @@ class TwoFragment : Fragment() {
         Log.d("検索した日時", lastSearchDate.toString())
         val item: Item = args.item
         item.run {
-            binding.ownerIconView.load(item.ownerIconUrl)
-            binding.nameView.text = item.name
-            binding.languageView.text = item.language
+            binding.ownerIconView.load(ownerIconUrl)
+            binding.nameView.text = name
+            binding.languageView.text = getString(R.string.written_language,language)
             binding.starsView.text = getString(R.string.txt_count_stars, stargazersCount.toString())
             binding.watchersView.text =
                 getString(R.string.txt_count_watchers, watchersCount.toString())

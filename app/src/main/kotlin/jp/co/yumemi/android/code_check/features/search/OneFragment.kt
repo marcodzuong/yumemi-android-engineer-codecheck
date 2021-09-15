@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.*
 import jp.co.yumemi.android.code_check.data.model.Item
 import jp.co.yumemi.android.code_check.features.search.adapter.CustomAdapter
 import jp.co.yumemi.android.code_check.databinding.FragmentOneBinding
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class OneFragment : Fragment() {
 
@@ -30,16 +31,17 @@ class OneFragment : Fragment() {
         return binding.root
     }
 
+    private val viewModel: OneViewModel by viewModel()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val viewModel = OneViewModel(app = requireActivity().application)
+
         val layoutManager = LinearLayoutManager(requireContext())
         val dividerItemDecoration =
             DividerItemDecoration(requireContext(), layoutManager.orientation)
         val adapter = CustomAdapter {
             gotoRepositoryFragment(it)
         }
-        observerViewModel(viewModel, adapter)
+        observerViewModel( adapter)
         binding.searchInputText
             .setOnEditorActionListener { editText, action, _ ->
                 if (action == EditorInfo.IME_ACTION_SEARCH) {
@@ -58,14 +60,17 @@ class OneFragment : Fragment() {
         }
     }
 
-    private fun observerViewModel(viewModel: OneViewModel, adapter: CustomAdapter) {
-        viewModel.searchResult.observe(viewLifecycleOwner, {
+    private fun observerViewModel( adapter: CustomAdapter) {
+        viewModel.search.observe(viewLifecycleOwner, {
             adapter.submitList(it)
         })
         viewModel.searchError.observe(viewLifecycleOwner, {
             if (it == true) {
                 Toast.makeText(requireContext(), "Net work error!!", Toast.LENGTH_LONG).show()
             }
+        })
+        viewModel.isLoading.observe(viewLifecycleOwner,{
+
         })
     }
 

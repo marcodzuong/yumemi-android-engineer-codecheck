@@ -3,36 +3,25 @@
  */
 package jp.co.yumemi.android.code_check.features.search
 
-import android.app.Application
-import android.content.Context
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import io.ktor.client.*
-import io.ktor.client.call.*
-import io.ktor.client.engine.android.*
-import io.ktor.client.request.*
-import io.ktor.client.statement.*
-import jp.co.yumemi.android.code_check.R
-import jp.co.yumemi.android.code_check.TopActivity.Companion.lastSearchDate
+import androidx.lifecycle.*
+import jp.co.yumemi.android.code_check.TopActivity
 import jp.co.yumemi.android.code_check.data.model.Item
-import kotlinx.coroutines.*
-import org.json.JSONArray
-import org.json.JSONObject
+import jp.co.yumemi.android.code_check.data.repository.utils.Resource
+import jp.co.yumemi.android.code_check.features.domain.GithubUseCase
+import kotlinx.coroutines.CoroutineExceptionHandler
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.util.*
 
 /**
  * TwoFragment で使う
  */
-class OneViewModel(private val app: Application) : ViewModel() {
-    private val context: Context by lazy {
-        app.applicationContext
-    }
+class OneViewModel(private val githubUseCase: GithubUseCase) : ViewModel() {
+
 
     // 検索結果
-    val searchResult: MutableLiveData<List<Item>> by lazy {
-        MutableLiveData<List<Item>>()
-    }
+  private  var searchResult: LiveData<Resource<List<Item>>> = MutableLiveData()
     val searchError: MutableLiveData<Boolean> by lazy {
         MutableLiveData<Boolean>()
     }
@@ -40,57 +29,26 @@ class OneViewModel(private val app: Application) : ViewModel() {
         println("CoroutineExceptionHandler got $exception")
         searchError.postValue(true)
     }
-
+    private val _search = MediatorLiveData<List<Item>>()
+    val search: LiveData<List<Item>> get() = _search
+    private val _isLoading = MutableLiveData<Resource.Status>()
+    val isLoading: LiveData<Resource.Status> get() = _isLoading
     fun searchResults(inputText: String) {
         viewModelScope.launch(Dispatchers.IO + handleError) {
-            val client = HttpClient(Android)
-            val response: HttpResponse = client.get("https://api.github.com/search/repositories") {
-                header("Accept", "application/vnd.github.v3+json")
-                parameter("q", inputText)
-            }
-
-            val jsonBody = JSONObject(response.receive<String>())
-
-            val jsonItems: JSONArray? = jsonBody.optJSONArray("items")
-
-            val items = mutableListOf<Item>()
-
-            /**
-             * アイテムの個数分ループする
-             */
-            jsonItems?.let { jsonArray ->
-                for (i in 0 until jsonArray.length()) {
-                    val jsonItem: JSONObject? = jsonArray.optJSONObject(i)
-                    jsonItem?.let { item ->
-                        val name = item.optString("full_name")
-                        val ownerIconUrl =
-                            item.optJSONObject("owner")?.optString("avatar_url") ?: ""
-                        val language = item.optString("language")
-                        val stargazersCount = item.optLong("stargazers_count")
-                        val watchersCount = item.optLong("watchers_count")
-                        val forksCount = item.optLong("forks_count")
-                        val openIssuesCount = item.optLong("open_issues_count")
-
-                        items.add(
-                            Item(
-                                name = name,
-                                ownerIconUrl = ownerIconUrl,
-                                language = context.getString(R.string.written_language, language),
-                                stargazersCount = stargazersCount,
-                                watchersCount = watchersCount,
-                                forksCount = forksCount,
-                                openIssuesCount = openIssuesCount
-                            )
-                        )
-                    }
-                }
-            }
+            searchResult = githubUseCase(keySearch = inputText)
             withContext(Dispatchers.Main) {
-                lastSearchDate = Date()
-                searchResult.value = items
-            }
-        }
+                TopActivity.lastSearchDate = Date()
+                _search.addSource(searchResult) {
+                    it.data?.let {list->
+                        _search.value = list
+                    }
+                    _isLoading.value = it.status
+                    if (it.status == Resource.Status.ERROR) searchError.value = true
+                }
 
+            }
+
+        }
     }
 }
 
