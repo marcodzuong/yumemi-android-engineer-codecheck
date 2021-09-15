@@ -54,8 +54,7 @@ class OneViewModel(private val githubUseCase: GithubUseCase) : BaseViewModel() {
         }
     }
     fun gotoRepositoryFragment(item: Item){
-//        findNavController().navigate(
-//            OneFragmentDirections.actionRepositoriesFragmentToRepositoryFragment(item))
+       navigate(OneFragmentDirections.actionRepositoriesFragmentToRepositoryFragment(item= item ))
     }
 
 }

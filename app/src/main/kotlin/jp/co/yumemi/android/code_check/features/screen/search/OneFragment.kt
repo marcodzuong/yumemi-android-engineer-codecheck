@@ -41,8 +41,6 @@ class OneFragment : BaseFragment() {
             DividerItemDecoration(requireContext(), layoutManager.orientation)
         val adapter = CustomAdapter {
             viewModel.gotoRepositoryFragment(it)
-            findNavController().navigate(
-                OneFragmentDirections.actionRepositoriesFragmentToRepositoryFragment(it))
         }
         observerViewModel(adapter)
         binding.searchInputText
