@@ -6,6 +6,7 @@ plugins {
     id 'androidx.navigation.safeargs.kotlin'
 }
 
+
 android {
     compileSdkVersion(AndroidSdk.compile)
 
@@ -65,5 +66,10 @@ dependencies {
     implementation(Libraries.koin)
     implementation(Libraries.koinScope)
     implementation(Libraries.koinViewModel)
+    testImplementation (Libraries.mockitoCore)
+    androidTestImplementation (Libraries.mockitoAndroid)
 
+}
+repositories {
+    mavenCentral()
 }

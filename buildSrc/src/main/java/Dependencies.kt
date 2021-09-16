@@ -32,6 +32,7 @@ object Libraries {
         const val lifecycle = "2.3.1"
 
         const val coroutines = "1.5.1"
+        const val mockito = "2.23.4"
     }
 
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
@@ -55,6 +56,8 @@ object Libraries {
         "androidx.navigation:navigation-fragment-ktx:${navigation}"
     const val navigationUi = "androidx.navigation:navigation-ui-ktx:${navigation}"
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+    const val mockitoCore = "org.mockito:mockito-core:${Versions.mockito}"
+    const val mockitoAndroid = "org.mockito:mockito-android:${Versions.mockito}"
 }
 
 object TestLibraries {

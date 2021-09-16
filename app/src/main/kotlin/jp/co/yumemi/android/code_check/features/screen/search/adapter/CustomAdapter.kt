@@ -12,11 +12,11 @@ import jp.co.yumemi.android.code_check.R
 
 val diffUtil = object : DiffUtil.ItemCallback<Item>() {
     override fun areItemsTheSame(oldItem: Item, newItem: Item): Boolean {
-        return oldItem.name == newItem.name
+        return oldItem.id == newItem.id
     }
 
     override fun areContentsTheSame(oldItem: Item, newItem: Item): Boolean {
-        return oldItem == newItem
+        return oldItem.name == newItem.name
     }
 
 }

@@ -37,6 +37,7 @@ class GithubRepositoryImpl(private val githubDataSource: GithubRemote) : IGithub
                     for (i in 0 until jsonArray.length()) {
                         val jsonItem: JSONObject? = jsonArray.optJSONObject(i)
                         jsonItem?.let { item ->
+                            val id = item.optLong("id")
                             val name = item.optString("full_name")
                             val ownerIconUrl =
                                 item.optJSONObject("owner")?.optString("avatar_url") ?: ""
@@ -48,6 +49,7 @@ class GithubRepositoryImpl(private val githubDataSource: GithubRemote) : IGithub
 
                             items.add(
                                 Item(
+                                    id = id,
                                     name = name,
                                     ownerIconUrl = ownerIconUrl,
                                     language = language,

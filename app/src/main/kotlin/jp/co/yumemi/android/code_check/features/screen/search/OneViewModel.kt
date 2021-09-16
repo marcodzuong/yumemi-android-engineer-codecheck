@@ -4,8 +4,6 @@
 package jp.co.yumemi.android.code_check.features.screen.search
 
 import androidx.lifecycle.*
-import androidx.navigation.fragment.NavHostFragment.findNavController
-import androidx.navigation.fragment.findNavController
 import jp.co.yumemi.android.code_check.TopActivity
 import jp.co.yumemi.android.code_check.common.base.BaseViewModel
 import jp.co.yumemi.android.code_check.data.model.Item
@@ -53,9 +51,7 @@ class OneViewModel(private val githubUseCase: GithubUseCase) : BaseViewModel() {
 
         }
     }
-    fun gotoRepositoryFragment(item: Item){
-       navigate(OneFragmentDirections.actionRepositoriesFragmentToRepositoryFragment(item= item ))
-    }
+
 
 }
 

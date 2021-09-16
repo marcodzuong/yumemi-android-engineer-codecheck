@@ -8,14 +8,12 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.OnBackPressedCallback
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import coil.load
-import jp.co.yumemi.android.code_check.data.model.Item
 import jp.co.yumemi.android.code_check.R
 import jp.co.yumemi.android.code_check.TopActivity.Companion.lastSearchDate
 import jp.co.yumemi.android.code_check.common.base.BaseFragment
+import jp.co.yumemi.android.code_check.data.model.Item
 import jp.co.yumemi.android.code_check.databinding.FragmentTwoBinding
 
 class TwoFragment : BaseFragment() {
@@ -48,11 +46,6 @@ class TwoFragment : BaseFragment() {
             binding.openIssuesView.text =
                 getString(R.string.txt_count_open_issues, openIssuesCount.toString())
         }
-        val callback = requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, object  : OnBackPressedCallback(true){
-            override fun handleOnBackPressed() {
-                findNavController().navigateUp()
-            }
-        })
     }
 
 

@@ -7,9 +7,5 @@ import androidx.navigation.NavDirections
 import jp.co.yumemi.android.code_check.navigation.NavigationCommand
 
 open class BaseViewModel : ViewModel() {
-    private val _navigation = MutableLiveData<NavigationCommand>()
-    val navigation: LiveData<NavigationCommand> = _navigation
-    fun navigate(directions: NavDirections) {
-        _navigation.value = NavigationCommand.To(directions)
-    }
+
 }

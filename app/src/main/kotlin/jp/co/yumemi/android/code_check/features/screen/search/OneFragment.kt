@@ -40,7 +40,7 @@ class OneFragment : BaseFragment() {
         val dividerItemDecoration =
             DividerItemDecoration(requireContext(), layoutManager.orientation)
         val adapter = CustomAdapter {
-            viewModel.gotoRepositoryFragment(it)
+            findNavController().navigate(OneFragmentDirections.actionRepositoriesFragmentToRepositoryFragment(item= it ))
         }
         observerViewModel(adapter)
         binding.searchInputText
@@ -62,7 +62,6 @@ class OneFragment : BaseFragment() {
     }
 
 
-    override fun getViewModel(): BaseViewModel = viewModel
 
     private fun observerViewModel(adapter: CustomAdapter) {
         viewModel.search.observe(viewLifecycleOwner, {
