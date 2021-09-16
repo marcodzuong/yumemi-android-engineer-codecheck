@@ -9,6 +9,7 @@ import java.util.*
 
 class TopActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_AndroidEngineerCodeCheck)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_top)
     }
