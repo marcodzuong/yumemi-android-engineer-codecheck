@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.work:work-runtime-ktx:2.5.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/272f78bdf6ce64d66d5ddb5d5e462a56/transformed/work-runtime-ktx-2.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d12fb1e1ae164f5e360c04b6e0b8ee3b/transformed/work-runtime-ktx-2.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9c5fef6e7cb73f51733e765bbf82b816/transformed/work-runtime-ktx-2.5.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8fe34c94c110d4450a220a7817554afe/transformed/work-runtime-ktx-2.5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8fe34c94c110d4450a220a7817554afe/transformed/work-runtime-ktx-2.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8fe34c94c110d4450a220a7817554afe/transformed/work-runtime-ktx-2.5.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.work/work-runtime-ktx/2.5.0/2fabc8c05c62815e39f1c863afd6893d5d5ef261/work-runtime-ktx-2.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

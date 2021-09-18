@@ -14,8 +14,7 @@
         android:theme="@style/Theme.AndroidEngineerCodeCheck"
         android:fullBackupContent="@xml/backup_descriptor">
         <activity
-            android:name="jp.co.yumemi.android.code_check.TopActivity"
-            android:theme="@style/SplashTheme"
+            android:name="jp.co.yumemi.android.code_check.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

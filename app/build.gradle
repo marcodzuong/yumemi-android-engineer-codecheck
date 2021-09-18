@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
     id 'androidx.navigation.safeargs.kotlin'
+//    id("org.jetbrains.compose")
 }
 
 
@@ -35,7 +36,13 @@ android {
     }
     buildFeatures {
         viewBinding true
+        compose true
     }
+    composeOptions {
+        kotlinCompilerVersion "1.5.10"
+        kotlinCompilerExtensionVersion "1.0.0-beta08"
+    }
+
 }
 
 dependencies {
@@ -52,12 +59,26 @@ dependencies {
 
     implementation (Libraries.navigationFragment)
     implementation (Libraries.navigationUi)
+    implementation (Libraries.navigationCompose)
 
 
     implementation (Libraries.coroutines)
     implementation (Libraries.ktor)
 
     implementation (Libraries.coil)
+    implementation (Libraries.koin_01)
+    implementation (Libraries.koin_02)
+    implementation (Libraries.koin_03)
+    implementation (Libraries.koin_04)
+    implementation (Libraries.compose_01)
+    implementation (Libraries.compose_02)
+    implementation (Libraries.compose_03)
+    implementation (Libraries.compose_04)
+    implementation (Libraries.compose_05)
+    implementation (Libraries.compose_06)
+    implementation (Libraries.compose_07)
+    implementation (Libraries.compose_08)
+    implementation (Libraries.compose_09)
 
     testImplementation(TestLibraries.junit)
     androidTestImplementation(TestLibraries.junitExt)
@@ -69,15 +90,16 @@ dependencies {
     androidTestImplementation (TestLibraries.espressoContrib)
     androidTestImplementation (TestLibraries.testCore)
     androidTestImplementation (TestLibraries.navigationTest)
-    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.3")
-//    androidTestImplementation (TestLibraries.androidTestCore)
-//    debugImplementation (TestLibraries.fragmentTest)01")
-    implementation(Libraries.koin)
-    implementation(Libraries.koinScope)
-    implementation(Libraries.koinViewModel)
-    testImplementation (Libraries.mockitoCore)
-//    androidTestImplementation (Libraries.mockitoAndroid)
 
+
+
+
+
+
+//     UI Tests
+    androidTestImplementation (TestLibraries.testCompose)
+
+    implementation (Libraries.gson)
 }
 repositories {
     mavenCentral()

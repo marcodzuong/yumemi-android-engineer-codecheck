@@ -1,4 +1,6 @@
-const val kotlinVersion = "1.5.30"
+import Libraries.Versions.koin_version
+
+const val kotlinVersion = "1.5.10"
 const val navigation = "2.3.5"
 object Releases {
     val versionCode = 1
@@ -27,12 +29,13 @@ object Libraries {
         const val material = "1.4.0"
         const val recyclerView = "1.2.1"
         const val koin = "2.2.0-rc-3"
-        const val coil = "1.3.2"
+        const val coil = "1.3.1"
         const val ktor = "1.6.3"
         const val lifecycle = "2.3.1"
 
         const val coroutines = "1.5.1"
         const val mockito = "2.23.4"
+        const val koin_version="3.1.2"
     }
 
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
@@ -44,9 +47,13 @@ object Libraries {
     const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
 
     const val koin = "org.koin:koin-android:${Versions.koin}"
+    const val koin_01 = "io.insert-koin:koin-android:$koin_version"
+    const val koin_02 = "io.insert-koin:koin-android-compat:$koin_version"
+    const val koin_03 = "io.insert-koin:koin-androidx-workmanager:$koin_version"
+    const val koin_04 = "io.insert-koin:koin-androidx-compose:$koin_version"
     const val koinScope = "org.koin:koin-androidx-scope:${Versions.koin}"
     const val koinViewModel = "org.koin:koin-androidx-viewmodel:${Versions.koin}"
-    const val coil = "io.coil-kt:coil:${Versions.coil}"
+    const val coil = "io.coil-kt:coil-compose:${Versions.coil}"
     const val ktor = "io.ktor:ktor-client-android:${Versions.ktor}"
     const val lifecycleViewModel =
         "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
@@ -55,9 +62,20 @@ object Libraries {
     const val navigationFragment =
         "androidx.navigation:navigation-fragment-ktx:${navigation}"
     const val navigationUi = "androidx.navigation:navigation-ui-ktx:${navigation}"
+    const val navigationCompose = "androidx.navigation:navigation-compose:2.4.0-alpha09"
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
     const val mockitoCore = "org.mockito:mockito-core:${Versions.mockito}"
     const val mockitoAndroid = "org.mockito:mockito-android:${Versions.mockito}"
+    const val gson ="com.google.code.gson:gson:2.8.8"
+    const val compose_01 ="androidx.compose.ui:ui:1.0.1"
+    const val compose_02 ="androidx.compose.ui:ui-tooling:1.0.1"
+    const val compose_03 ="androidx.compose.foundation:foundation:1.0.1"
+    const val compose_04 ="androidx.compose.material:material:1.0.1"
+    const val compose_05 ="androidx.compose.material:material-icons-core:1.0.1"
+    const val compose_06 ="androidx.compose.material:material-icons-extended:1.0.1"
+    const val compose_07 ="androidx.activity:activity-compose:1.3.1"
+    const val compose_08 ="androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07"
+    const val compose_09 ="androidx.compose.runtime:runtime-livedata:1.0.1"
 }
 
 object TestLibraries {
@@ -80,6 +98,7 @@ object TestLibraries {
     const val androidTestCore = "androidx.test:core:1.4.0"
     const val fragmentTest = "androidx.fragment:fragment-testing:${Versions.fragmentVersion}"
     const val navigationTest = "androidx.navigation:navigation-testing:$navigation"
+    const val testCompose = "androidx.compose.ui:ui-test-junit4:1.0.1"
 }
 
 object BuildPlugins {
