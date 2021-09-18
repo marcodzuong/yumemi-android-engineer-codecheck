@@ -65,11 +65,21 @@ object TestLibraries {
         const val junit = "4.13.2"
         const val junitExt = "1.1.3"
         const val espresso = "3.4.0"
+        const val testCore = "2.1.0"
+        const val fragmentVersion = "1.2.5"
     }
 
     const val junit = "junit:junit:${Versions.junit}"
     const val junitExt = "androidx.test.ext:junit:${Versions.junitExt}"
+    const val testRunner = "androidx.test:runner:1.4.0"
+    const val testRules = "androidx.test:rules:1.4.0"
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
+    const val espressoContrib = "androidx.test.espresso:espresso-contrib:${Versions.espresso}"
+    const val espressoIntents = "androidx.test.espresso:espresso-intents:${Versions.espresso}"
+    const val testCore = "androidx.arch.core:core-testing:${Versions.testCore}"
+    const val androidTestCore = "androidx.test:core:1.4.0"
+    const val fragmentTest = "androidx.fragment:fragment-testing:${Versions.fragmentVersion}"
+    const val navigationTest = "androidx.navigation:navigation-testing:$navigation"
 }
 
 object BuildPlugins {
@@ -85,6 +95,7 @@ object BuildPlugins {
     const val kotlinAndroidExtensions = "kotlin-android-extensions"
     const val javaLib = "java-library"
     const val androidLib = "com.android.library"
+
 
     object BuildType {
         const val release = "release"

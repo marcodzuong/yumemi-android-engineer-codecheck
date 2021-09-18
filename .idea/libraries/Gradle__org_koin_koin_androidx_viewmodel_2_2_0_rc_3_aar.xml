@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: org.koin:koin-androidx-viewmodel:2.2.0-rc-3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b5de988f751c086804b4e9c6bb63eadb/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2757ce8daa121c94fa5bfd5c061c86e5/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9038df657b9af40f6aacc021958c5093/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ee9ca0d0ddf530fc187553721655ea57/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/53f004d4579f7edeeae2c0d38a3e080f/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b288edb1fc8b2efa39bfa17868c178a5/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0c1c2f53fc0ab0152e09930691c83cf3/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d90602242de47886a6e5a7001f867d17/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/48647facf85b662180da66eb0adde542/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ed649fe246277d7afde3b8d7922ab59f/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ed649fe246277d7afde3b8d7922ab59f/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ed649fe246277d7afde3b8d7922ab59f/transformed/jetified-koin-androidx-viewmodel-2.2.0-rc-3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-androidx-viewmodel/2.2.0-rc-3/9ed3841f31362cca056ccb8ed41be87912b65288/koin-androidx-viewmodel-2.2.0-rc-3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-androidx-viewmodel/2.2.0-rc-3/baaa976c7f65176d61e7be1d00d97ea9a5a86ff8/koin-androidx-viewmodel-2.2.0-rc-3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

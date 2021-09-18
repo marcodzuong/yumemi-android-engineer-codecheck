@@ -61,13 +61,22 @@ dependencies {
 
     testImplementation(TestLibraries.junit)
     androidTestImplementation(TestLibraries.junitExt)
-    androidTestImplementation(TestLibraries.espresso)
+    androidTestImplementation(TestLibraries.testRunner)
+    androidTestImplementation(TestLibraries.testRules)
 
+    androidTestImplementation(TestLibraries.espresso)
+    androidTestImplementation(TestLibraries.espressoIntents)
+    androidTestImplementation (TestLibraries.espressoContrib)
+    androidTestImplementation (TestLibraries.testCore)
+    androidTestImplementation (TestLibraries.navigationTest)
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.3")
+//    androidTestImplementation (TestLibraries.androidTestCore)
+//    debugImplementation (TestLibraries.fragmentTest)01")
     implementation(Libraries.koin)
     implementation(Libraries.koinScope)
     implementation(Libraries.koinViewModel)
     testImplementation (Libraries.mockitoCore)
-    androidTestImplementation (Libraries.mockitoAndroid)
+//    androidTestImplementation (Libraries.mockitoAndroid)
 
 }
 repositories {

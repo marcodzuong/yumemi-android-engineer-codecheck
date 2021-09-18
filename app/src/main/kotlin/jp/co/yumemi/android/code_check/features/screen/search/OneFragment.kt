@@ -9,11 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.widget.Toast
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.*
 import jp.co.yumemi.android.code_check.common.base.BaseFragment
-import jp.co.yumemi.android.code_check.common.base.BaseViewModel
 import jp.co.yumemi.android.code_check.features.screen.search.adapter.CustomAdapter
 import jp.co.yumemi.android.code_check.databinding.FragmentOneBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -32,6 +30,15 @@ class OneFragment : BaseFragment() {
         return binding.root
     }
 
+    val mAdapter: CustomAdapter by lazy {
+        CustomAdapter {
+            findNavController().navigate(
+                OneFragmentDirections.actionRepositoriesFragmentToRepositoryFragment(
+                    item = it
+                )
+            )
+        }
+    }
     private val viewModel: OneViewModel by viewModel()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -39,10 +46,8 @@ class OneFragment : BaseFragment() {
         val layoutManager = LinearLayoutManager(requireContext())
         val dividerItemDecoration =
             DividerItemDecoration(requireContext(), layoutManager.orientation)
-        val adapter = CustomAdapter {
-            findNavController().navigate(OneFragmentDirections.actionRepositoriesFragmentToRepositoryFragment(item= it ))
-        }
-        observerViewModel(adapter)
+
+        observerViewModel(mAdapter)
         binding.searchInputText
             .setOnEditorActionListener { editText, action, _ ->
                 if (action == EditorInfo.IME_ACTION_SEARCH) {
@@ -57,10 +62,9 @@ class OneFragment : BaseFragment() {
         binding.recyclerView.also {
             it.layoutManager = layoutManager
             it.addItemDecoration(dividerItemDecoration)
-            it.adapter = adapter
+            it.adapter = mAdapter
         }
     }
-
 
 
     private fun observerViewModel(adapter: CustomAdapter) {
