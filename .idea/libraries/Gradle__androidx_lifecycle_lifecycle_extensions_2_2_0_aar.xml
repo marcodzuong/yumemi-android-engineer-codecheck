@@ -1,24 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-extensions:2.2.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3df5430daeb1854d1c260ce5fea2c0ce/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f6ecf43c6396976e35ea4976d19bba2d/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c0b7b2f24b33f8af0d8e0c56faf00d06/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/950e02ea7c94bfff4a869d458d7bc833/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/12ab6dedab4c1f992e22d15b0fc0efc5/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ceb5a16ebecc5d1ae9f7d3fd7d79761d/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ad8b903f762a0817f2f5223b89139d0d/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/94393fc582c3e4a55025579d666244f1/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/da2501b0f4650331f157f2680b134658/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e745a69c5b5403c1ae4be963993bcfb2/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/dce16f1d3a52670b1f258ddbc6ce89d1/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/01bdd2a525e967c82c7bcb161905f77b/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2d760445f36e0ee53e3d37d97570af69/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d967b223560261e532c69eebddb2bbcf/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c17cc29ac84a88acc005531de3e2b135/transformed/lifecycle-extensions-2.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c1d74f79a04913527a58f41e7b0089b6/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c1d74f79a04913527a58f41e7b0089b6/transformed/lifecycle-extensions-2.2.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c1d74f79a04913527a58f41e7b0089b6/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d05e725916c5f639dcbc724a69c70918/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2f862f73bdbcd2ef9a56c1259383171a/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/294da219560bcb3dd948367cb35ebb55/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/223bcf92a7f6c1083c3581eb87aed082/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6ca20a3c4a3278960d3491c70923ef7f/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a28cd303896d63ff3b326b4afaf0d1a7/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/48b7b0b7e00e4afc8f8e29e1acba0a24/transformed/lifecycle-extensions-2.2.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/48b7b0b7e00e4afc8f8e29e1acba0a24/transformed/lifecycle-extensions-2.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/48b7b0b7e00e4afc8f8e29e1acba0a24/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

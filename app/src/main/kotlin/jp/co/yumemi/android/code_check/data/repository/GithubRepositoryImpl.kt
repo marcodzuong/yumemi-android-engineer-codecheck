@@ -1,6 +1,9 @@
 package jp.co.yumemi.android.code_check.data.repository
 
 import androidx.lifecycle.LiveData
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
@@ -10,13 +13,26 @@ import jp.co.yumemi.android.code_check.data.repository.utils.NetworkBoundResourc
 import jp.co.yumemi.android.code_check.data.repository.utils.Resource
 import org.json.JSONArray
 import org.json.JSONObject
+import com.google.firebase.database.DatabaseError
+
+import com.google.firebase.database.DataSnapshot
+
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.FirebaseError
+
+
+
+
 
 class GithubRepositoryImpl(private val githubDataSource: GithubRemote) : IGithubRepository {
-    override suspend fun searchGithub(keySearch: String): List<Item> {
+    override suspend fun searchGithub(keySearch: String, page: Int, perPage: Int): List<Item> {
         val response =
             githubDataSource.searchGithubData(url = "https://api.github.com/search/repositories") {
                 header("Accept", "application/vnd.github.v3+json")
                 parameter("q", keySearch)
+                parameter("page", page)
+                parameter("per_page", perPage)
+
             }
         val jsonBody = JSONObject(response.receive<String>())
 
@@ -60,5 +76,7 @@ class GithubRepositoryImpl(private val githubDataSource: GithubRemote) : IGithub
         return items
 
     }
+
+
 
 }

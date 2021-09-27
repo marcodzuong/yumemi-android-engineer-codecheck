@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.installreferrer:installreferrer:1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cfb988dd552a76a0631e7d0e43ea25ba/transformed/jetified-installreferrer-1.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/03047ad2b2a5943e6b6c2bb5b20562da/transformed/jetified-installreferrer-1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/34b1ceb6436db1839ce48776bb14dd0e/transformed/jetified-installreferrer-1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/86299b5c3abff475af988dc861501a18/transformed/jetified-installreferrer-1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/017dce110710a917988dba8aef5c5e51/transformed/jetified-installreferrer-1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1f6972e2ec93dd8c41401bd3a29d0737/transformed/jetified-installreferrer-1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8c5b60eb02661d743d4b912d3722b4e7/transformed/jetified-installreferrer-1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cfb988dd552a76a0631e7d0e43ea25ba/transformed/jetified-installreferrer-1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cfb988dd552a76a0631e7d0e43ea25ba/transformed/jetified-installreferrer-1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cfb988dd552a76a0631e7d0e43ea25ba/transformed/jetified-installreferrer-1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.installreferrer/installreferrer/1.0/a572d7b98f4738eb9677ff7bce82608f28c5b0e/installreferrer-1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.installreferrer/installreferrer/1.0/3241c0c1c69068520c6ac47283680a9f9f46f532/installreferrer-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

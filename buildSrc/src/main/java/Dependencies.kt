@@ -15,7 +15,7 @@ object AndroidSdk {
 }
 
 object AppConfig {
-    const val applicationId = "jp.co.yumemi.android.codecheck"
+    const val applicationId = "jp.co.yumemi.android.code_check"
     const val versionCode = 1
     const val versionName = "1.0"
     const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -63,6 +63,7 @@ object Libraries {
         "androidx.navigation:navigation-fragment-ktx:${navigation}"
     const val navigationUi = "androidx.navigation:navigation-ui-ktx:${navigation}"
     const val navigationCompose = "androidx.navigation:navigation-compose:2.4.0-alpha09"
+    const val animateNavigation = "com.google.accompanist:accompanist-navigation-animation:0.16.0"
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
     const val mockitoCore = "org.mockito:mockito-core:${Versions.mockito}"
     const val mockitoAndroid = "org.mockito:mockito-android:${Versions.mockito}"
@@ -76,6 +77,13 @@ object Libraries {
     const val compose_07 ="androidx.activity:activity-compose:1.3.1"
     const val compose_08 ="androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07"
     const val compose_09 ="androidx.compose.runtime:runtime-livedata:1.0.1"
+    const val firebaseBom ="com.google.firebase:firebase-bom:28.4.1"
+    const val firebaseAnalytics ="com.google.firebase:firebase-analytics-ktx"
+    const val firebaseAuth ="com.google.firebase:firebase-auth"
+    const val playServicesAuth ="com.google.android.gms:play-services-auth:19.0.0"
+    const val fbAuth ="com.facebook.android:facebook-android-sdk:[5,6)"
+    const val fireBaseCrash="com.google.firebase:firebase-crashlytics-ktx"
+    const val fireBaseDb="com.google.firebase:firebase-database-ktx"
 }
 
 object TestLibraries {
@@ -114,6 +122,8 @@ object BuildPlugins {
     const val kotlinAndroidExtensions = "kotlin-android-extensions"
     const val javaLib = "java-library"
     const val androidLib = "com.android.library"
+    const val googleService = "com.google.gms:google-services:4.3.10"
+    const val fireBaseCrash = "com.google.firebase:firebase-crashlytics-gradle:2.7.1"
 
 
     object BuildType {

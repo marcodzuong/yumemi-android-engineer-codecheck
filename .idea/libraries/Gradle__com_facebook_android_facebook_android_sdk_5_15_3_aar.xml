@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-android-sdk:5.15.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0f67ef36594a9c69bd6b8b21c84a5891/transformed/jetified-facebook-android-sdk-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/50ee2cfe57b816e1f16a6830de831a3c/transformed/jetified-facebook-android-sdk-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2a5a2d105c2e3adac1401350a3211903/transformed/jetified-facebook-android-sdk-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b1030e1e2d4b3de1b524b307937c498a/transformed/jetified-facebook-android-sdk-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8e232bcb552edf98e8297213936093b4/transformed/jetified-facebook-android-sdk-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b4446ffb6c18e4b6964e6bf569a179c3/transformed/jetified-facebook-android-sdk-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b9a0f1e00e2b246e7bf0c4c7f5e4741/transformed/jetified-facebook-android-sdk-5.15.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7b9a0f1e00e2b246e7bf0c4c7f5e4741/transformed/jetified-facebook-android-sdk-5.15.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7b9a0f1e00e2b246e7bf0c4c7f5e4741/transformed/jetified-facebook-android-sdk-5.15.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-android-sdk/5.15.3/aa4f8418fc0edd719f5be80ed3f5de88f87ea10e/facebook-android-sdk-5.15.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-android-sdk/5.15.3/97bba3f7f0d8ed2e481dc4a180055920042b829/facebook-android-sdk-5.15.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

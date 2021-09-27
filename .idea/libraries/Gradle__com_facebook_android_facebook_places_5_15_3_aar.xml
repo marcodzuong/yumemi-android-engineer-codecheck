@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-places:5.15.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9b9dc2bac5963722c1e0a06875c2df77/transformed/jetified-facebook-places-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ade8e8fa5fe6239bc7a66ce5896fb4cc/transformed/jetified-facebook-places-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3089f724273c6a7e127aa43cdc339e53/transformed/jetified-facebook-places-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/802ec875bf2e84284e9ff337e340e5be/transformed/jetified-facebook-places-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f27a4a934a3defa94a916efe300b0b02/transformed/jetified-facebook-places-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1cbc7c232a740e25cf99cfa17d9c1f7b/transformed/jetified-facebook-places-5.15.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/55c030e7c314e190ecd7d1a4fcf175f4/transformed/jetified-facebook-places-5.15.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/55c030e7c314e190ecd7d1a4fcf175f4/transformed/jetified-facebook-places-5.15.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/55c030e7c314e190ecd7d1a4fcf175f4/transformed/jetified-facebook-places-5.15.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-places/5.15.3/c5ff04af0dd91363831feac4320d2859c0f5f024/facebook-places-5.15.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-places/5.15.3/6e98233023abb4cedce62d82a4f7cfe5beb0fab2/facebook-places-5.15.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

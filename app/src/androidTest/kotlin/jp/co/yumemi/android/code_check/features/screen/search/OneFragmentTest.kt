@@ -17,7 +17,6 @@ import jp.co.yumemi.android.code_check.R
 import jp.co.yumemi.android.code_check.data.model.Item
 import jp.co.yumemi.android.code_check.data.remote.GithubRemote
 import jp.co.yumemi.android.code_check.data.repository.GithubRepositoryImpl
-import jp.co.yumemi.android.code_check.features.domain.GithubUseCase
 import jp.co.yumemi.android.code_check.features.screen.createRule
 import jp.co.yumemi.android.code_check.features.screen.search.adapter.CustomAdapter
 import jp.co.yumemi.android.code_check.getOrAwaitData

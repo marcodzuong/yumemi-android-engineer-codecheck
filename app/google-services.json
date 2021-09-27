@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "130095027277",
+    "project_id": "yumemi-android",
+    "storage_bucket": "yumemi-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130095027277:android:86ac05b572e0294f493804",
+        "android_client_info": {
+          "package_name": "jp.co.yumemi.android.code_check"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130095027277-10b6crvsjgf3jpfbqo616j09o6kjjett.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.co.yumemi.android.code_check",
+            "certificate_hash": "8b6dd8d006602b8037ed7a2d822e333d2b5eb916"
+          }
+        },
+        {
+          "client_id": "130095027277-m7mkh4tt7k4av8e0407d6ubckc5r6q2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoBMtHWcScTu47ujCOD8cECdVWyVcMquc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130095027277-m7mkh4tt7k4av8e0407d6ubckc5r6q2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

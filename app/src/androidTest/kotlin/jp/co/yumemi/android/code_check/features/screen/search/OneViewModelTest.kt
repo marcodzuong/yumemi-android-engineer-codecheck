@@ -6,7 +6,6 @@ import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import io.ktor.client.engine.android.*
 import jp.co.yumemi.android.code_check.data.remote.GithubRemote
 import jp.co.yumemi.android.code_check.data.repository.GithubRepositoryImpl
-import jp.co.yumemi.android.code_check.features.domain.GithubUseCase
 import jp.co.yumemi.android.code_check.getOrAwaitData
 import junit.framework.TestCase
 import org.junit.Assert.*

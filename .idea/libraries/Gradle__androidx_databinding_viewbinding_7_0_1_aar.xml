@@ -1,24 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.databinding:viewbinding:7.0.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/37b1e1243cf1cb04e654fbc247e38ba8/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f9f87621dd1f7e04abf4d1c001423dab/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/06ad4165c581ddff503fe0fd7fe06986/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bea178cdf40887bf09b1ca54de837838/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3f0e3189d5342cdf026ce0c411171557/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/03d7edbea05be775dd8867f5b13a81c3/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b6d5a647869edcfe289bb77a1ab5e143/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b562f1e34a6f2a9dee17b6481a7cabbe/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/337d52c48c248c305da48bc985058495/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/43b87b4c31b72b0fc1b5546a3a259c79/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3142741198c3f8a142b82c690fcabddd/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/599cb29b8fd4cc873f10f028f91682a3/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/783e0364f740b24bb4899839a9a1b684/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e546f3f5679752353029414f33be601c/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9635ee2efeda69586fa788159c86aee0/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ea17b1cedab445ec6890d4b29e5d97d1/transformed/jetified-viewbinding-7.0.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ea17b1cedab445ec6890d4b29e5d97d1/transformed/jetified-viewbinding-7.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ea17b1cedab445ec6890d4b29e5d97d1/transformed/jetified-viewbinding-7.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/77ede0a38748e0d853beaf8012701f34/transformed/jetified-viewbinding-7.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6bbfb30fc61cd9fb3ff71452d1b03b4a/transformed/jetified-viewbinding-7.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b623d52d559af4fc1976cf47ed188025/transformed/jetified-viewbinding-7.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/01c98852811f5c026e09bc5151aa9623/transformed/jetified-viewbinding-7.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2639b54e0fad5fbd2c621959034ef46e/transformed/jetified-viewbinding-7.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/17facc36a8b1b8381b313d9ee6ddb59c/transformed/jetified-viewbinding-7.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8f6a4d162cbe4047593515efdb809759/transformed/jetified-viewbinding-7.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8f6a4d162cbe4047593515efdb809759/transformed/jetified-viewbinding-7.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8f6a4d162cbe4047593515efdb809759/transformed/jetified-viewbinding-7.0.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

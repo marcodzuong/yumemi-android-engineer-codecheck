@@ -1,21 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.apps.common.testing.accessibility.framework:accessibility-test-framework:3.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/88658bbb4fa1c199de6258d89b2b76b8/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/41901cd842f945f346eab92528c417ae/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7f71e09f5cf372f6088dd485e6486c3c/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/93349e322441e11ac9e41fe33fbdf077/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/345bf58140df176a9863b5d3a9f3bf25/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/68bc40ee41ade55caa9c0f0046540f84/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e6cc7611691d61d2327667720af3bb0d/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/88a5d9f68d526cd79a832078dd2b5400/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/009555c8aca4a33d1a2f3c14845850e0/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/27a95d9981621a9b15d422ecbb0488cd/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/579fd528d0485ae0718a64e673623484/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1689aa308f307cf6747d67421f654b51/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/31161a6cdba05067bd681ae431bcfbd8/transformed/jetified-accessibility-test-framework-3.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/31161a6cdba05067bd681ae431bcfbd8/transformed/jetified-accessibility-test-framework-3.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/31161a6cdba05067bd681ae431bcfbd8/transformed/jetified-accessibility-test-framework-3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/eb7ae5c2e83a669fa28b5e4309012906/transformed/jetified-accessibility-test-framework-3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8ecba5e3acc3ad43cf40581c2dcdd036/transformed/jetified-accessibility-test-framework-3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6061f65ff36cb5805d2c5189ed5cff0d/transformed/jetified-accessibility-test-framework-3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/343fdf621a5f9d20a1273d06fa9ec019/transformed/jetified-accessibility-test-framework-3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/77c3883e29ee2c8da92e280f484a4d17/transformed/jetified-accessibility-test-framework-3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fbcde1e76ccf84a5f90b2fd7b155f393/transformed/jetified-accessibility-test-framework-3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/84f45594c08f861efb2e02f7a7b0c0b4/transformed/jetified-accessibility-test-framework-3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/84f45594c08f861efb2e02f7a7b0c0b4/transformed/jetified-accessibility-test-framework-3.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/84f45594c08f861efb2e02f7a7b0c0b4/transformed/jetified-accessibility-test-framework-3.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.apps.common.testing.accessibility.framework/accessibility-test-framework/3.1/a4effc83ebb1245462953f8c95f53001dca54ace/accessibility-test-framework-3.1-javadoc.jar!/" />

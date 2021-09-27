@@ -1,24 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.test.ext:junit:1.1.3@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d66cc755d39c8bc386abb0f1a7135916/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/984ad733133f4921e42820ab7c9a25dc/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e9a487fbc617d385ddaca537e446460b/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0ef49f5f0c8eec548e0d4f8c773a3a5b/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/44894fe8c5082e076d437bfa17d0c362/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/252ff93ec233106d27eabbd8d15d104a/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3b1371a22fd9c5e2a1226f16447c5ed0/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8650f8d892651648ed2ecdae5a0f9bf8/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0956e38221514f662758efcdb6ba6f9b/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/29d187b800ffeea2d1c1d200107fa064/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e39a9078d17ddf6016ae8b6153b03213/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7587a9a627ef04f6ec48ca8bf6806c5e/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5b441175314ec2293701291155468d85/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/23f12c84f38190ec76b4f93b5e8c7cf8/transformed/jetified-junit-1.1.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8b12e068728098c652e1f670008b6f6a/transformed/jetified-junit-1.1.3/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/33fc48ea39144bd50074a1e794d2b542/transformed/jetified-junit-1.1.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/33fc48ea39144bd50074a1e794d2b542/transformed/jetified-junit-1.1.3/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/33fc48ea39144bd50074a1e794d2b542/transformed/jetified-junit-1.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f676ba99528c928b2272f7eab4ddabd1/transformed/jetified-junit-1.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c9a56fb066a206aec4397cbc5e2acf4b/transformed/jetified-junit-1.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9113d5bd1f110f762ba9d7609528d8d5/transformed/jetified-junit-1.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6851460d122777db1218e119943de521/transformed/jetified-junit-1.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6049226d6fdaec2c3c4c4594b3cc0731/transformed/jetified-junit-1.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/82b4f7552b4c25cb2ac8d4335f7c8154/transformed/jetified-junit-1.1.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/09f39f756e67b2524d95e9711a13c95b/transformed/jetified-junit-1.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/09f39f756e67b2524d95e9711a13c95b/transformed/jetified-junit-1.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/09f39f756e67b2524d95e9711a13c95b/transformed/jetified-junit-1.1.3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test.ext/junit/1.1.3/f138cf897cc1e024dd714073df04f2425d845104/junit-1.1.3-javadoc.jar!/" />

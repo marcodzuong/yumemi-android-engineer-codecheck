@@ -1,24 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-livedata:2.3.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/228e7f04b46274e96c1efc8d91bd67ee/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/236c06a8802c0e77e116f3a1c7028e08/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ea39bffa996d3fabda424bf3303a3444/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/53f796447cfe0af4d5ca5c7d63000a7a/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6c734cc4c6a120f9f9ba0262b1801487/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1ea3e2d32a438bed33af7735e3900a7e/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9735c3462950444fd48eb535f70375fb/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b1f2336bbee0f066ce00c36583636807/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2278423b624a9e591d34240b8632ad08/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4b737ded8f51d88b1b751a5b939ab3e7/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/96fa354d945a052e03c02c318c6204c2/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d299fab98c7a97f9143c581513cb8d15/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ec917bb2221aad86c8a710645f0abccd/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7babb553bbd9a94916868c88afa510d3/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b264abeca79e5be1d7212a726d6d3604/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/14a9e4a0497812883f491304c9b894ac/transformed/lifecycle-livedata-2.3.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/14a9e4a0497812883f491304c9b894ac/transformed/lifecycle-livedata-2.3.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/14a9e4a0497812883f491304c9b894ac/transformed/lifecycle-livedata-2.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6f7248dadac398b8c9ccd49b581b44db/transformed/lifecycle-livedata-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/51c0e312447be19e86006d50b8565628/transformed/lifecycle-livedata-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a6df70f0c6d6c100110449d082779cda/transformed/lifecycle-livedata-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/879c1c5c58423517c0ab52ddbbaef9e1/transformed/lifecycle-livedata-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6d6957c3f5d621aa7c827e7527b8dfb3/transformed/lifecycle-livedata-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9127397cf17e72f75f637a627fa8ce5b/transformed/lifecycle-livedata-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e8d6badad524f52b2a59d613bb559df3/transformed/lifecycle-livedata-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e8d6badad524f52b2a59d613bb559df3/transformed/lifecycle-livedata-2.3.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e8d6badad524f52b2a59d613bb559df3/transformed/lifecycle-livedata-2.3.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

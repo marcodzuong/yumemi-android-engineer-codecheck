@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.accompanist:accompanist-navigation-animation:0.16.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/82b3d9e0fa43663c94619f2183d1cc59/transformed/jetified-accompanist-navigation-animation-0.16.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/949318d51c490c895fbe7a3669365202/transformed/jetified-accompanist-navigation-animation-0.16.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/92b705db175619eb7ebbdbe5539eb6ad/transformed/jetified-accompanist-navigation-animation-0.16.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/02061d37936440c6e4fd3e03f4c63b78/transformed/jetified-accompanist-navigation-animation-0.16.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1f7ed52c182fd45cffca18ac100b3b52/transformed/jetified-accompanist-navigation-animation-0.16.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c6546e1ff791aa90fd7ec9caabf00638/transformed/jetified-accompanist-navigation-animation-0.16.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/576cf1ed36e3fb0ad6fd0e418671d071/transformed/jetified-accompanist-navigation-animation-0.16.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/576cf1ed36e3fb0ad6fd0e418671d071/transformed/jetified-accompanist-navigation-animation-0.16.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/576cf1ed36e3fb0ad6fd0e418671d071/transformed/jetified-accompanist-navigation-animation-0.16.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.accompanist/accompanist-navigation-animation/0.16.0/bc34837d85724a04428368f9db6a97e0563ffbd8/accompanist-navigation-animation-0.16.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.accompanist/accompanist-navigation-animation/0.16.0/5eb1ebd42168a6baaf88c1dd620d43764f2b1962/accompanist-navigation-animation-0.16.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

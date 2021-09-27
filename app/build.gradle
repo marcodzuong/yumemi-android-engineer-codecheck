@@ -3,8 +3,10 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
-    id 'androidx.navigation.safeargs.kotlin'
+//    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.gms.google-services'
 //    id("org.jetbrains.compose")
+    id 'com.google.firebase.crashlytics'
 }
 
 
@@ -49,17 +51,18 @@ dependencies {
 
     implementation(Libraries.appCompat)
     implementation(Libraries.ktxCore)
-    implementation(Libraries.constraintLayout)
+//    implementation(Libraries.constraintLayout)
     implementation(Libraries.materialDesign)
-    implementation(Libraries.recyclerView)
+//    implementation(Libraries.recyclerView)
 
     implementation (Libraries.lifecycleViewModel)
     implementation (Libraries.lifecycleLivedata)
     implementation (Libraries.lifecycleRuntime)
 
-    implementation (Libraries.navigationFragment)
-    implementation (Libraries.navigationUi)
-    implementation (Libraries.navigationCompose)
+//    implementation (Libraries.navigationFragment)
+//    implementation (Libraries.navigationUi)
+//    implementation (Libraries.navigationCompose)
+    implementation (Libraries.animateNavigation)
 
 
     implementation (Libraries.coroutines)
@@ -91,9 +94,13 @@ dependencies {
     androidTestImplementation (TestLibraries.testCore)
     androidTestImplementation (TestLibraries.navigationTest)
 
-
-
-
+    implementation (Libraries.firebaseAnalytics)
+    implementation (Libraries.firebaseAuth)
+    implementation platform (Libraries.firebaseBom)
+    implementation (Libraries.playServicesAuth)
+    implementation (Libraries.fbAuth)
+    implementation (Libraries.fireBaseCrash)
+    implementation (Libraries.fireBaseDb)
 
 
 //     UI Tests
