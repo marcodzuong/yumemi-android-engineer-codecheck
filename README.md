@@ -8,7 +8,7 @@
 #  - add function load more for Search Screen
 
 [comment]: <> (<img src="docs/app.gif" width="320">)
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/f9nRDlme-bg/0.jpg)](https://www.youtube.com/watch?v=f9nRDlme-bg&t=26s)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/f9nRDlme-bg/0.jpg)](https://www.youtube.com/watch?v=f9nRDlme-bg&t=0s)
 ### 環境
 
 - IDE：Android Studio Arctic Fox | 2020.3.1 Patch 1
